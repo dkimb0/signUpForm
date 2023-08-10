@@ -1,3 +1,8 @@
+@font-face {
+    font-family: norseBold;
+    src: url(Norse-Bold.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +21,8 @@ body{
     width: 100%;
     max-width: 500px;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .bgImage{
@@ -45,6 +52,19 @@ body{
 
 .bgDark p {
     color: white;
+    font-size: 6rem;
+    padding-top: 20px;
+    font-family: norseBold;
+}
+
+.bgDark img {
+    height: 6rem;
+}
+
+.credit{
+    margin-top: -2rem;
+    color: white;
+    font-size: 0.8rem;
 
 }
 
