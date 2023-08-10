@@ -1,3 +1,5 @@
+/* initializing */
+
 @font-face {
     font-family: norseBold;
     src: url(Norse-Bold.otf);
@@ -8,7 +10,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
-
 }
 
 body{
@@ -16,6 +17,10 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+
+
+/* sidebar section */
 
 .sidebar{
     width: 100%;
@@ -29,11 +34,9 @@ body{
     background-image: url("bgImage.jpg"); 
     background-size: cover;
 
-
     padding-top: 100vh;
     width: 100%;
     /* padding-right: 30vw; */
-
 }
 
 .bgDark{
@@ -68,10 +71,30 @@ body{
 
 }
 
+
+/* form section */
 .formContainer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    /* justify-content: center; */
+}
+
+.heading{
+    padding-left: 40px;
+}
+
+.boldFont{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+.headingForm {
+    font-size: 1.4em;
+}
+
+p + p{
+    padding-top: 40px;
 }
 
 .whiteCard {
@@ -80,6 +103,60 @@ body{
     flex-direction: column;
     justify-content: center;
 
+    box-shadow: 0px 5px 5px grey;
+    margin-bottom: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
 
 
+div > label, input {
+    display: block;
+    margin-right: 40px;
+}
+
+.formRow{
+    padding: 20px 20px 20px 0px;
+    display: flex;
+}
+
+.formRow input{
+    border-radius: 3px;
+    width: 200px;
+    height: 28px;
+    font-size: 1rem;
+    border: 1px solid #E5E7EB;
+    padding: 10px;
+}
+
+
+
+label {
+    font-size: 0.8rem;
+}
+
+.submit{
+    padding-left: 40px;
+    display: block;
+}
+
+button{
+    border-radius: 3px;
+    font-size: 1rem;
+    background-color: #596D48;
+    color: #E5E7EB;
+
+    border: none;
+    padding: 10px 40px;
+    margin-bottom: 20px;
+    
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #313e26;
+}
+
+button:active{
+    background-color: #14190f;
 }
