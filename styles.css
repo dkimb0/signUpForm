@@ -16,6 +16,7 @@ body{
     background-color: rgb(244, 244, 244);
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
 }
 
 
@@ -76,11 +77,14 @@ body{
 .formContainer{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    justify-content: center;
+    flex-grow: 1;
 }
 
-.heading{
+.heading,
+.whiteCard,
+.submit{
     padding-left: 40px;
 }
 
@@ -89,9 +93,6 @@ body{
     font-weight: 800;
 }
 
-.headingForm {
-    font-size: 1.4em;
-}
 
 p + p{
     padding-top: 40px;
@@ -105,8 +106,14 @@ p + p{
 
     box-shadow: 0px 5px 5px grey;
     margin-bottom: 40px;
-    padding-left: 40px;
     padding-top: 20px;
+    margin-top: 72px;
+}
+
+
+
+.heading{
+    width: 720px;
 }
 
 
@@ -136,7 +143,6 @@ label {
 }
 
 .submit{
-    padding-left: 40px;
     display: block;
 }
 
@@ -159,4 +165,11 @@ button:hover{
 
 button:active{
     background-color: #14190f;
+}
+
+.login{
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+
 }
