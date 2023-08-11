@@ -77,13 +77,15 @@
                         <div>
                             
                             <label for="password">PASSWORD</label>
-                            <input type="password" id="password" name="password" required>
-                            <span class="error"></span>    
+                            <input type="password" id="password" name="password" required
+                            pattern="[a-zA-Z0-9!@#$%^&*=+_\-]{8,32}">
+                            <p class="error">Passwords do not match</p>    
                         </div>
     
                         <div>
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword" required>    
+                            <input type="password" id="confirmPassword" name="confirmPassword" required
+                            pattern="[a-zA-Z0-9!@#$%^&*=+_\-`~]{8,32}">    
                         </div>
                     </div>
                 </div>

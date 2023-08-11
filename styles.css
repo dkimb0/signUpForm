@@ -191,19 +191,13 @@ button:active{
 
 } 
 
-input.error {
-    border: 1px solid red;
-    box-shadow: 1px 1px 2px red;
-}
-
 .formRow input:focus{
     border: 1px solid rgb(0, 85, 255);
     box-shadow: 1px 1px 2px rgb(0, 85, 255);
 }
 
-.error + input:invalid,
-.error::after{
-    content: 'Passwords do not match';
-    color: red;
 
+.error{
+    color: red;
+    visibility: hidden;
 }
