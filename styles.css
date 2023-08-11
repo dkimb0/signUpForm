@@ -1,5 +1,9 @@
 /* initializing */
-
+button,
+input{
+    font-family: inherit;
+    font-size: 100%;
+}
 @font-face {
     font-family: norseBold;
     src: url(Norse-Bold.otf);
@@ -19,6 +23,9 @@ body{
     justify-content: stretch;
 }
 
+input{
+    outline: none;
+}
 
 
 /* sidebar section */
@@ -171,5 +178,32 @@ button:active{
     text-decoration: none;
     color: #596D48;
     font-weight: bold;
+
+}
+
+/* Forms validation */
+/* .formRow input[type='email']:invalid,
+.formRow input[type='tel']:invalid,
+.formRow input[type='password']:invalid,
+.formRow input[type='text']:invalid{
+    border: 1px solid red;
+    box-shadow: 1px 1px 2px red;
+
+} */
+
+input.error {
+    border: 1px solid red;
+    box-shadow: 1px 1px 2px red;
+}
+
+.formRow input:focus{
+    border: 1px solid rgb(0, 85, 255);
+    box-shadow: 1px 1px 2px rgb(0, 85, 255);
+}
+
+.error + input:invalid,
+.error::after{
+    content: 'Passwords do not match';
+    color: red;
 
 }
